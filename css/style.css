@@ -1,0 +1,124 @@
+ body{
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red;   */
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--veryDarkBlue);
+  background-color: var(--veryLightGray);
+
+}
+:root{
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --veryDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+}
+div.text{
+  text-align: center;
+  padding: 2.5em;
+  /* border: 1px solid red; */
+}
+
+h1{
+  font-weight: 200;
+  color: var(--veryDarkBlue);
+  margin-bottom: -1em;
+}
+
+h2{
+  color: var(--veryDarkBlue);
+  font-weight: 600;
+
+}
+
+p{
+  font-weight: 200;
+}
+
+article{
+  height: 200px;
+  background-color: white;
+  margin: 2em;
+  padding: 1em 2em;
+  border-radius: .5em;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.1);
+}
+article.supervisor{
+  border-top: 5px solid var(--cyan);
+}
+article.team{
+  border-top: 5px solid var(--red);
+}
+article.karma{
+  border-top: 5px solid var(--orange);
+}
+article.calculator{
+  border-top: 5px solid var(--blue);
+}
+
+h3{
+  font-size: 1.5em;
+  color: var(--veryDarkBlue);
+}
+h4{
+  font-weight: 200;
+  margin-top: -1em;
+  color: var(--veryDarkBlue);
+}
+img{
+  position: absolute; 
+  right: 2em;
+}
+
+
+@media screen and (min-width: 1440px){
+
+  div.text{
+    padding-left: 31em;
+    padding-right: 31em;
+  }
+  h1{
+    font-size: 2em;
+  }
+  h2{
+    font-size: 2em;
+  }
+  
+  .cards{
+    margin-top: -2.6em !important;
+    max-width: 85%;
+    height: 560px;
+    margin: auto;
+    position: relative;
+  }
+
+  article{
+    width: 300px;
+  }
+  article.supervisor{
+    position: absolute;
+    left: 4%;
+    top: 25%;
+  }
+  article.team{
+    position: absolute;
+    top: 0;
+    right: 33%;
+  }
+  article.calculator{
+    position: absolute;
+    right: 2.5%;
+    top: 25%;
+  }
+  article.karma{
+    position: absolute;
+    right: 33%;
+    bottom: 0;
+  }
